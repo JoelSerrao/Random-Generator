@@ -1,12 +1,13 @@
 #Libraries needed
 import numpy as np
+import time #used for producing random seed values
 
 #Global declaration of variables
-x0 = 37         # Seed
-a = 7           # Multiplier 
-c = 29          # Increment
-m = 100         # Modulus 
-n = m-1         # Length of random numbers
+x0 = int(time.time())%10000     # Use this for a random seed value
+a = 110351                      # Multiplier
+c = 12345                       # Increment
+m = 34843546                    # Modulus
+n = 1000                        # Length of the random numbers
 
 #Creating a function for the generator
 def MCG(a, m, c, x0, n):
